@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const ejs = require('ejs');
 const app = express();
-const PORT = process.env.PORT;
+
 
 
 
@@ -37,7 +37,7 @@ app.post('/',function(req,res){
             }
           })
         })
-app.listen(PORT,function(err){
+app.listen(3000,function(err){
   if (err){
     console.log(err);
   }
